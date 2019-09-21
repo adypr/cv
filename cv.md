@@ -5,7 +5,7 @@
 1.  **Name:**  Aida Y
 3.  **Contact Info:**
 	  * *E-mail*: macanel@yandex.ru
-	  * *Discord*: 
+	  * *Discord*: Aida Y#1689
 	  * *Skype*: live:workady2015
 	  * *Location*: Moscow, Russia
 4.  **Summary**: My goal is to become a junior front-end developer and grow as a professional in this field. Discipline and an analytical approach to obtaining knowledge, the ability to work on my own and high motivation will allow me to quickly master the necessary technology stack. I will try to join the new team as soon as possible and become its useful participant.
