@@ -1,6 +1,5 @@
 
-| ![img]( https://placem.at/places?h=150&w=150&txt=Aida&random=1) |
-|--|
+![img]( https://placem.at/places?h=150&w=150&txt=Aida&random=1)
 
 1.  **Name:**  Aida Y
 3.  **Contact Info:**
@@ -14,7 +13,7 @@
 
 	|  Skill | Level |
 	 |--|--|
-	|  CorelDraw | :large_blue_circle::large_blue_circle::large_blue_circle::large_blue_circle::large_blue_circle::large_blue_circle::large_blue_circle::large_blue_circle::white_circle::white_circle: |
+	|  CorelDraw | :large_blue_circle: :large_blue_circle: :large_blue_circle: :large_blue_circle: :large_blue_circle::large_blue_circle::large_blue_circle::large_blue_circle::white_circle::white_circle: |
 	|  Photoshop |       :large_blue_circle::large_blue_circle::large_blue_circle::large_blue_circle::large_blue_circle::large_blue_circle::white_circle::white_circle::white_circle::white_circle: |
 	|  HTML/CSS | :large_blue_circle::large_blue_circle::large_blue_circle::large_blue_circle::white_circle::white_circle::white_circle::white_circle::white_circle::white_circle: |
 	|  JavaScript | :large_blue_circle::large_blue_circle::white_circle::white_circle::white_circle::white_circle::white_circle::white_circle::white_circle::white_circle: |
@@ -60,8 +59,8 @@
 	  
 	  
 7. **Experience:**
-	* *Hexlet*. [Frontend JavaScript Course](https://ru.hexlet.io/u/user-75c805d6f57b53df)
-	* *FreeCodeCamp*. [Responsive Web Design Certification and Javascript Algorithms And Data Structures Certification](https://www.freecodecamp.org/fcc32748869-940a-4adf-808b-e19cbb7e14af)
+	* *2018-2019* - Hexlet. [Frontend JavaScript Course](https://ru.hexlet.io/u/user-75c805d6f57b53df)
+	* *2018-2019* - FreeCodeCamp. [Responsive Web Design Certification and Javascript Algorithms And Data Structures Certification](https://www.freecodecamp.org/fcc32748869-940a-4adf-808b-e19cbb7e14af)
 
 8. **Education:**
 *2005-2010* - Moscow State University of Design and Technology, designing products of light industry.
