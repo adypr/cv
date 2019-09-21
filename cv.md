@@ -12,13 +12,13 @@
 5.  **Skills:**
 
 	|  Skill | Level |
-	 |--|--|
-	|  CorelDraw | :large_blue_circle: :large_blue_circle: :large_blue_circle: :large_blue_circle: :large_blue_circle::large_blue_circle::large_blue_circle::large_blue_circle::white_circle::white_circle: |
-	|  Photoshop |       :large_blue_circle::large_blue_circle::large_blue_circle::large_blue_circle::large_blue_circle::large_blue_circle::white_circle::white_circle::white_circle::white_circle: |
-	|  HTML/CSS | :large_blue_circle::large_blue_circle::large_blue_circle::large_blue_circle::white_circle::white_circle::white_circle::white_circle::white_circle::white_circle: |
-	|  JavaScript | :large_blue_circle::large_blue_circle::white_circle::white_circle::white_circle::white_circle::white_circle::white_circle::white_circle::white_circle: |
-	|  PHP | :large_blue_circle::white_circle::white_circle::white_circle::white_circle::white_circle::white_circle::white_circle::white_circle::white_circle: |
-	|  Git | :large_blue_circle::white_circle::white_circle::white_circle::white_circle::white_circle::white_circle::white_circle::white_circle::white_circle: |
+	|--|--|
+	|  CorelDraw | 8 / 10 |
+	|  Photoshop | 6 / 10 |
+	|  HTML/CSS | 4 / 10 |
+	|  JavaScript | 3 / 10 |
+	|  PHP | 1 / 10 |
+	|  Git | 1 / 10 |
 
 6. **Code examples:**
 	* *[Hexlet](https://ru.hexlet.io/challenges/js_sequences_queens)*
