@@ -1,12 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mrs+Sheppards|Nanum+Gothic+Coding|Oswald&amp;display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="main.css">
+    <title>Resume</title>
+    <script src="/main.39afc03c.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="header__name">
+        <h1>Aida Y</h1>
+      </div>
+      <nav class="header__nav">
+        <ul>
+          <li><a href="#summary">Summary</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#examples">Examples</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#education">Education</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="summary" id="summary">
+        <div class="summary__img"><img src="https://placem.at/places?h=150&amp;w=150&amp;txt=Aida&amp;random=1"></div>
+        <div class="summary__contact">
+          <ul>
+            <li><a href="mailto:macanel@yandex.ru"><em>E-mail: </em><span>macanel@yandex.ru</span></a></li>
+            <li><a href="https://discordapp.com/"><i>Discord: </i><span>Aida Y#1789</span></a></li>
+            <li><a href="https://skype.com/"><i>Skype: </i><span>live:workady2015</span></a></li>
+            <li><a href="https://yandex.ru/maps/-/CGcOjYog"><i>Location: </i><span>Mocsow, Russia</span></a></li>
+          </ul>
+        </div>
+        <div class="summary__description">
+          <h2>Summary</h2>
+          <p class="summary__text">My goal is to become a junior front-end developer and grow as a professional in this field. Discipline and an analytical approach to obtaining knowledge, the ability to work on my own and high motivation will allow me to quickly master the necessary technology stack. I will try to join the new team as soon as possible and become its useful participant.</p>
+        </div>
+      </section>
+      <section class="skills">
+        <h2>Skills</h2>
+        <table class="skills__table">
+          <tr>
+            <th>Skill</th>
+            <th>Level</th>
+          </tr>
+          <tr>
+            <td>CorelDraw</td>
+            <td>8 / 10</td>
+          </tr>
+          <tr>
+            <td>Photoshop</td>
+            <td>6 / 10</td>
+          </tr>
+          <tr>
+            <td>HTML/CSS</td>
+            <td>4 / 10</td>
+          </tr>
+          <tr>
+            <td>Javascript</td>
+            <td>3 / 10</td>
+          </tr>
+          <tr>
+            <td>PHP</td>
+            <td>1 / 10</td>
+          </tr>
+          <tr>
+            <td>Git</td>
+            <td>1 / 10</td>
+          </tr>
+        </table>
+      </section>
+      <section class="examples" id="examples">
+        <h2>Code examples</h2>
+        <ul class="examples__list">
+          <li>
+            <a href="https://ru.hexlet.io/challenges/js_sequences_queens"><em>Hexlet</em></a>
+            <div class="examples__code">
+              <pre>let  brokeQueens = 0;
+const  isSafeQueens = (list) => {
+    if (isEmpty(tail(list))) {
+        return  brokeQueens === 0;
+    }
+    const  mainelem = head(list);
+    const  lines = reduce((elem, acc1) => {
+        if ((mainelem === elem) || (elem === mainelem - acc1) || (elem === mainelem + acc1)) {
+            brokeQueens += 1;
+        }
+        return  acc1 + 1;
+    }, 1, tail(list));
+    return  isSafeQueens(tail(list));
+};
+export  default  isSafeQueens;
+
+</pre>
+            </div>
+          </li>
+          <li>
+            <a href="https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/javascript-algorithms-and-data-structures-projects/telephone-number-validator"><em>FreeCodeCamp</em></a>
+            <div class="examples__code">
+              <pre>function telephoneCheck(str) {
+ return /(^1? ?\(\d{3}\)( ?\-?)\d{3}( ?\-?)\d{4})$|^1? ?\d{3} ?\-?\d{3} ?\-?\d{4}$/g.test(str);
+}
+</pre>
+            </div>
+          </li>
+          <li>
+            <a href="https://github.com/adypr/stylist-landing"><em>Landing</em></a>
+            <div class="examples__code">
+              <pre>mixin gallery(photos)
+ul.gallery__table(data-masonry='{ "itemSelector": ".gallery__cell", "columnWidth": ".gallery__cell", "isFitWidth": true, "gutter": 7 }')
+    each photo in photos
+        li.gallery__cell
+            a(class="gallery__link" data-fancybox='images' href=photo[0] data-caption=photo[2] aria-label=photo[2])
+                img(class="gallery__img" src=photo[1] alt=photo[2])
+</pre>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="experience" id="experience">
+        <h2>Experience</h2>
+        <ul class="experience_list">
+          <li><em>2018-2019 - </em><span>Hexlet.</span><a href="https://ru.hexlet.io/u/user-75c805d6f57b53df"> Frontend JavaScript Course</a></li>
+          <li><em>2018-2019 - </em><span>ReeCodeCamp.</span><a href="https://www.freecodecamp.org/fcc32748869-940a-4adf-808b-e19cbb7e14af"> Responsive Web Design Certification and Javascript Algorithms And Data Structures Certification</a></li>
+        </ul>
+      </section>
+      <section class="education" id="education">
+        <h2>Education</h2>
+        <p><em>2005-2010 - </em><span>Moscow State University of Design and Technology, designing products of light industry.</span></p>
+      </section>
+      <section class="english">
+        <h2>English</h2>
+        <p>Level A2</p>
+      </section>
+    </main>
+    <footer class="footer">
+      <ul class="footer__contacts">
+        <li>
+          <svg id="Capa_1" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 14 14" style="enable-background:new 0 0 14 14;" xml:space="preserve">
+            <g>
+              <g></g>
+              <path style="fill:#030104;" d="M7,9L5.268,7.484l-4.952,4.245C0.496,11.896,0.739,12,1.007,12h11.986                            c0.267,0,0.509-0.104,0.688-0.271L8.732,7.484L7,9z"></path>
+              <path style="fill:#030104;" d="M13.684,2.271C13.504,2.103,13.262,2,12.993,2H1.007C0.74,2,0.498,2.104,0.318,2.273L7,8                            L13.684,2.271z"></path>
+              <polygon style="fill:#030104;" points="0,2.878 0,11.186 4.833,7.079 		"></polygon>
+              <polygon style="fill:#030104;" points="9.167,7.079 14,11.186 14,2.875 		"></polygon>
+            </g>
+          </svg>
+          <span>macanel@yandex.ru</span>
+        </li>
+        <li>
+          <svg id="Bold" enable-background="new 0 0 24 24" height="20px" viewbox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg">
+            <path d="m3.58 21.196h14.259l-.681-2.205 1.629 1.398 1.493 1.338 2.72 2.273v-21.525c-.068-1.338-1.22-2.475-2.648-2.475l-16.767.003c-1.427 0-2.585 1.139-2.585 2.477v16.24c0 1.411 1.156 2.476 2.58 2.476zm10.548-15.513-.033.012.012-.012zm-7.631 1.269c1.833-1.334 3.532-1.27 3.532-1.27l.137.135c-2.243.535-3.26 1.537-3.26 1.537s.272-.133.747-.336c3.021-1.188 6.32-1.102 9.374.402 0 0-1.019-.937-3.124-1.537l.186-.183c.291.001 1.831.055 3.479 1.26 0 0 1.844 3.15 1.844 7.02-.061-.074-1.144 1.666-3.931 1.726 0 0-.472-.534-.808-1 1.63-.468 2.24-1.404 2.24-1.404-.535.337-1.023.537-1.419.737-.609.268-1.219.4-1.828.535-2.884.468-4.503-.315-6.033-.936l-.523-.266s.609.936 2.174 1.404c-.411.469-.818 1.002-.818 1.002-2.786-.066-3.802-1.806-3.802-1.806 0-3.876 1.833-7.02 1.833-7.02z"></path>
+            <path d="m14.308 12.771c.711 0 1.29-.6 1.29-1.34 0-.735-.576-1.335-1.29-1.335v.003c-.708 0-1.288.598-1.29 1.338 0 .734.579 1.334 1.29 1.334z"></path>
+            <path d="m9.69 12.771c.711 0 1.29-.6 1.29-1.34 0-.735-.575-1.335-1.286-1.335l-.004.003c-.711 0-1.29.598-1.29 1.338 0 .734.579 1.334 1.29 1.334z"></path>
+          </svg>
+          <span>Aida Y#1789</span>
+        </li>
+        <li>
+          <svg id="Layer_1" enable-background="new 0 0 56.693 56.693" height="20px" version="1.1" viewbox="0 0 56.693 56.693" width="56.693px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <path d="M51.497,34.785c0.354-1.624,0.539-3.303,0.539-5.029c0-12.938-10.488-23.427-23.428-23.427  c-1.365,0-2.703,0.119-4.008,0.342c-2.092-1.32-4.571-2.087-7.227-2.087c-7.505,0-13.588,6.084-13.588,13.59  c0,2.507,0.683,4.854,1.867,6.871c-0.312,1.521-0.474,3.098-0.474,4.711c0,12.941,10.488,23.43,23.429,23.43  c1.467,0,2.898-0.135,4.289-0.392c1.914,1.027,4.1,1.611,6.424,1.611c7.504,0,13.586-6.083,13.586-13.587  C52.907,38.65,52.399,36.604,51.497,34.785z M40.624,40.953c-1.082,1.533-2.684,2.749-4.76,3.611  c-2.055,0.854-4.518,1.288-7.32,1.288c-3.365,0-6.188-0.593-8.389-1.761c-1.575-0.849-2.872-1.999-3.858-3.424  c-0.994-1.433-1.498-2.857-1.498-4.232c0-0.857,0.328-1.602,0.976-2.211c0.642-0.604,1.464-0.91,2.446-0.91  c0.805,0,1.5,0.24,2.064,0.716c0.539,0.459,1,1.136,1.373,2.009c0.416,0.953,0.867,1.756,1.346,2.385  c0.461,0.61,1.121,1.121,1.965,1.521c0.85,0.401,1.996,0.606,3.402,0.606c1.938,0,3.527-0.413,4.721-1.229  c1.168-0.796,1.732-1.753,1.732-2.923c0-0.925-0.295-1.65-0.902-2.223c-0.641-0.597-1.48-1.058-2.502-1.379  c-1.064-0.331-2.51-0.691-4.297-1.066c-2.434-0.52-4.498-1.138-6.141-1.835c-1.682-0.716-3.036-1.708-4.026-2.946  c-1.005-1.261-1.516-2.837-1.516-4.695c0-1.77,0.535-3.367,1.591-4.741c1.047-1.367,2.578-2.431,4.548-3.157  c1.943-0.719,4.256-1.084,6.875-1.084c2.092,0,3.93,0.244,5.467,0.719c1.545,0.48,2.846,1.13,3.869,1.929  c1.029,0.806,1.797,1.665,2.279,2.561c0.484,0.902,0.73,1.802,0.73,2.671c0,0.838-0.322,1.599-0.961,2.264  c-0.643,0.666-1.451,1.004-2.406,1.004c-0.867,0-1.547-0.213-2.018-0.627c-0.438-0.391-0.893-0.995-1.398-1.864  c-0.584-1.108-1.291-1.984-2.102-2.601c-0.789-0.601-2.105-0.902-3.914-0.902c-1.678,0-3.045,0.336-4.059,1.003  c-0.977,0.639-1.453,1.374-1.453,2.245c0,0.535,0.154,0.979,0.471,1.363c0.332,0.409,0.803,0.763,1.395,1.062  c0.615,0.311,1.252,0.556,1.887,0.73c0.65,0.182,1.742,0.449,3.24,0.795c1.896,0.408,3.641,0.863,5.18,1.357  c1.562,0.5,2.908,1.113,4.01,1.83c1.121,0.73,2.01,1.667,2.641,2.789c0.633,1.125,0.953,2.513,0.953,4.127  C42.265,37.654,41.712,39.416,40.624,40.953z"></path>
+          </svg>
+          <span>live:workady2015</span>
+        </li>
+        <li>
+          <svg id="Layer_2" style="enable-background:new 0 0 512 512;" version="1.1" viewbox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g>
+              <path d="M255.9,6c-21.7,0-43.4,5.3-62.3,16c-33.9,19.2-57.9,55.3-61.9,94.1c-3.7,36.1,8.9,71.8,22,105.7   c15.1,38.9,102.1,228.9,102.1,228.9s87.6-191.4,102.8-230.9c13.1-34.2,25.7-70.2,21.2-106.5c-5.2-42.1-34.7-79.9-73.6-96.8   C290.5,9.5,273.2,6,255.9,6z M255.9,189.8c-33,0-59.8-26.8-59.8-59.8s26.8-59.8,59.8-59.8S315.7,97,315.7,130   S289,189.8,255.9,189.8z"></path>
+              <path id="XMLID_1_" d="M292.2,397.1c-4.1,8.9-7.9,17.2-11.4,24.7c36.8,3.6,63.6,15.2,63.6,28.8c0,16.6-39.6,30-88.4,30   c-48.8,0-88.4-13.4-88.4-30c0-13.6,26.8-25.2,63.5-28.8c-3.5-7.4-7.4-15.8-11.4-24.7c-60.2,6.3-104.5,27.9-104.5,53.5   c0,30.6,63.1,55.4,140.8,55.4s140.8-24.8,140.8-55.4C396.8,425,352.4,403.4,292.2,397.1z"></path>
+            </g>
+          </svg>
+          <span>Mocsow, Russia</span>
+        </li>
+      </ul>
+    </footer>
+  </body>
 </html>
