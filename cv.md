@@ -61,6 +61,8 @@
 7. **Experience:**
 	* *2018-2019* - Hexlet. [Frontend JavaScript Course](https://ru.hexlet.io/u/user-75c805d6f57b53df)
 	* *2018-2019* - FreeCodeCamp. [Responsive Web Design Certification and Javascript Algorithms And Data Structures Certification](https://www.freecodecamp.org/fcc32748869-940a-4adf-808b-e19cbb7e14af)
+	* *2017-2019* - [Training Wordpress project](http://okurortah.ru/)
+	* *2016-2017* - [LLC Timur Pimpy](https://jeench.com/). The content editor: adding new products to the site, searching the Internet for images and product characteristics, editing images, compiling product descriptions.
 
 8. **Education:**
 *2005-2010* - Moscow State University of Design and Technology, designing products of light industry.
