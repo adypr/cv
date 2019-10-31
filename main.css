@@ -1,0 +1,204 @@
+@charset "UTF-8";
+body {
+  background-color: #7b8587;
+  max-width: 1024px;
+  margin: 0 auto;
+  font-family: "Roboto", Arial, sans-serif;
+  color: #323a42;
+}
+
+section {
+  background-color: #ecf1f4;
+  padding: 10px;
+  margin: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #a62853;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 25px 0 25px;
+}
+
+h1 {
+  margin: 0;
+}
+
+h2 {
+  font-family: "Oswald", sans-serif;
+}
+
+pre {
+  font-family: "Nanum Gothic Coding", monospace;
+  max-width: 90%;
+  overflow-x: scroll;
+  /* Добавляем полосу прокрутки */
+  background-color: #fafbfc;
+  height: 150px;
+  padding: 5px;
+  border: solid 1px #7b8587;
+}
+
+svg {
+  width: 20px;
+  vertical-align: bottom;
+  padding-right: 5px;
+}
+
+.header__name {
+  font-family: "Mrs Sheppards", cursive;
+  font-size: 25px;
+}
+.header__nav ul {
+  z-index: 99;
+  display: flex;
+  position: fixed;
+  margin-left: -522px;
+  margin-top: 0;
+  padding-left: 0;
+  background-color: rgba(123, 133, 135, 0.8);
+}
+.header__nav ul a {
+  color: #ecf1f4;
+}
+.header__nav li {
+  margin: 15px 20px 15px 20px;
+}
+
+.first {
+  background-color: antiquewhite;
+}
+
+.summary {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+.summary::after {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  content: "";
+  width: 0;
+  height: 0;
+  border-bottom: 25px solid #7b8587;
+  border-left: 25px solid transparent;
+}
+
+.skills {
+  position: relative;
+}
+.skills::after {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  content: "";
+  width: 0;
+  height: 0;
+  border-bottom: 25px solid #7b8587;
+  border-left: 25px solid transparent;
+}
+.skills__table {
+  margin-left: 40px;
+  border: 2px solid #7b8587;
+  border-collapse: collapse;
+  width: 35%;
+}
+.skills__table tr:nth-child(2n) {
+  background-color: #dae0e4;
+}
+.skills__table th {
+  border: 2px solid #7b8587;
+  padding: 5px;
+}
+.skills__table td {
+  border: 1px solid #7b8587;
+  padding: 4px;
+  text-align: center;
+}
+
+.examples {
+  position: relative;
+}
+.examples::after {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  content: "";
+  width: 0;
+  height: 0;
+  border-bottom: 25px solid #7b8587;
+  border-left: 25px solid transparent;
+}
+
+.experience {
+  position: relative;
+}
+.experience::after {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  content: "";
+  width: 0;
+  height: 0;
+  border-bottom: 25px solid #7b8587;
+  border-left: 25px solid transparent;
+}
+
+.education {
+  position: relative;
+}
+.education::after {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  content: "";
+  width: 0;
+  height: 0;
+  border-bottom: 25px solid #7b8587;
+  border-left: 25px solid transparent;
+}
+.education p {
+  padding-left: 40px;
+}
+
+.english {
+  position: relative;
+}
+.english::after {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  content: "";
+  width: 0;
+  height: 0;
+  border-bottom: 25px solid #7b8587;
+  border-left: 25px solid transparent;
+}
+.english p {
+  padding-left: 40px;
+}
+
+.footer__contacts {
+  display: flex;
+  justify-content: center;
+  font-size: 15px;
+  color: #000000;
+  padding-left: 0;
+}
+.footer__contacts li {
+  padding-right: 25px;
+}
