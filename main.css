@@ -141,7 +141,44 @@ progress {
 }
 .skills__table td:last-child {
   width: 75%; 
+  padding: 6px;
 }
+
+.skills__level {
+  width: 100%;
+  background-color: white;
+}
+
+.skills__bar {
+  text-align: right;
+  padding-right: 20px;
+  line-height: 20px;
+  background-color: #8985ac;
+}
+.coreldraw {
+  width: 80%;
+}
+
+.photoshop {
+  width: 60%;
+}
+
+.html {
+  width: 40%;
+}
+
+.js {
+  width: 30%;
+}
+
+.php {
+  width: 10%;
+}
+
+.git {
+  width: 10%;
+}
+
 .examples {
   position: relative;
 }
