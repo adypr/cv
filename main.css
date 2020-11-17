@@ -93,12 +93,10 @@ progress {
 .summary {
   display: flex;
   flex-wrap: wrap;
-  position: relative;
 }
 
 .block {
   position: relative;
-
 }
 
 .block::after {
@@ -112,13 +110,8 @@ progress {
   border-left: 25px solid transparent;
 }
 
-.skills {
-  position: relative;
-  
-}
-
 .skills__table {
-  margin: 0 auto 16px;
+  margin: 0 0 16px;
   border: 2px solid #7b8587;
   border-collapse: collapse;
   width: 75%;
@@ -179,26 +172,9 @@ progress {
   width: 10%;
 }
 
-.examples {
-  position: relative;
-}
-
-.experience {
-  position: relative;
-}
-
-.education {
-  position: relative;
-}
-
 .education p {
   padding-left: 40px;
 }
-
-.english {
-  position: relative;
-}
-
 .english p {
   padding-left: 40px;
 }
