@@ -1,26 +1,50 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="container">
+    <SideBar :skills="skills" :contacts="contacts"/>
+    <main>
+      <About />
+      <WorkList :works="works"/>
+      <EduList :educations="educations" />
+    </main>
+
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue';
+import About from '@/components/About.vue';
+import WorkList from '@/components/WorkList.vue';
+import SideBar from '@/components/SideBar.vue';
+import EduList from '@/components/EduList.vue';
+
+import {
+  works, skills, contacts, educations,
+} from '@/base/content';
 
 export default {
-  name: 'App',
   components: {
-    HelloWorld,
+    WorkList, SideBar, EduList, About,
+  },
+  data() {
+    return {
+      works,
+      skills,
+      contacts,
+      educations,
+    };
   },
 };
 </script>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style scoped>
+main {
+  padding: 80px 64px 50px;
+  background: url('@/assets/images/noise.png');
+}
+.container {
+  display: flex;
+  /* flex-wrap: wrap; */
+  max-width: 1340px;
+  margin-left: auto;
+  margin-right: auto;
 }
 </style>
