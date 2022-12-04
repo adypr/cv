@@ -14,7 +14,7 @@ export const works = [
   {
     id: 2,
     title: 'RS Lang',
-    task: 'The project is an application for learning English in a playful way. Implemented two mini-games and a statistics section to control the progress of the study',
+    task: 'The project is an application for learning English in a playful way. Implemented two mini-games, authorization and a statistics section to control the progress of the study',
     stack: 'SCSS, Webpack, TypeScript, JS, API',
     deploy: 'https://gilded-toffee-2eda7b.netlify.app/',
     code: 'https://github.com/adypr/rslang-clone',
@@ -23,7 +23,7 @@ export const works = [
     id: 3,
     title: 'Online store',
     task: 'The project in JavaScript. Implemented adding products to the cart, search by product cards, cross-filtering and sorting',
-    stack: 'SCSS, ESLint, TypeScript, Webpack',
+    stack: 'SCSS, ESLint, TypeScript, Webpack, Jest',
     deploy: 'https://rolling-scopes-school.github.io/adypr-JSFE2022Q1/store/',
     code: 'https://github.com/adypr/online-store-clone',
   },

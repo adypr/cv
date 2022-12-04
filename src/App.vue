@@ -42,8 +42,7 @@ main {
 }
 .container {
   display: flex;
-  /* flex-wrap: wrap; */
-  max-width: 1340px;
+  max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
 }

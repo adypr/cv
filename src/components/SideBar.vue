@@ -29,15 +29,17 @@ export default {
   },
 };
 </script>
-<style scoped>
+<style lang="scss" scoped>
   aside {
     width: 32%;
     flex-shrink: 0;
     padding: 50px 45px 50px 64px;
     background: linear-gradient(270deg, var(--first-gradient-color)
                  0.02%, var(--second-gradient-color) 100%);
+    @media (max-width: $xxl) {
+      padding: 3vw 2.8vw 3vw 3.5vw;
+    }
   }
-
   .picture {
     position: relative;
     margin-bottom: 64px;

@@ -24,7 +24,7 @@ export default {
 section {
   position: relative;
   margin-top: 56px;
-  padding: 16px 56px;
+  padding: 16px 0 16px 56px;
   padding-bottom: 55px;
   border-left: 2px solid;
   border-image: url('@/assets/images/line-works.png') 1 stretch;
@@ -66,9 +66,8 @@ h2::before {
 
 .list {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 32px 16px;
+  flex-direction: column;
+  gap: 56px;
   padding: 20px 0;
 }
 </style>

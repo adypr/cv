@@ -1,4 +1,5 @@
 :root {
+  /* Colors */
   --primary-color: #3e3a41;
   --first-gradient-color: #2c2c2c;
   --second-gradient-color: #2f2f2f;
@@ -7,8 +8,6 @@
   --accent-color: #00c0aa;
   --accent-color-light: #ffee00;
   --contrast-color: #f43054;
-
-  /* --year: "sdfsdf"; */
 }
 
 * {
@@ -72,6 +71,10 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  color: var(--accent-color-light);
+}
+
 button {
   padding: 0;
 
@@ -83,8 +86,13 @@ button {
   outline: inherit;
 }
 
+div {
+  font-size: 16px;
+  line-height: 150%;
+}
+
 p {
   font-weight: 300;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 170%;
 }

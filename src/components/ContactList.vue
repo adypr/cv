@@ -32,9 +32,9 @@ export default {
     gap: 5px;
   }
   span {
-    display: block;
     width: 32px;
     height: 32px;
+    flex-shrink: 0;
     background-color: var(--accent-color-light);
     background-repeat: no-repeat;
     border-radius: 50%;

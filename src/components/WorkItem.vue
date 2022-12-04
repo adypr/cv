@@ -1,16 +1,17 @@
 <template lang="">
   <div class="work">
     <div class="picture">
-      <img :src="require('@/assets/images/works/' + work.id + '.jpg')" alt="" class="image"/>
+      <img :src="require('@/assets/images/works/' + work.id + '.jpg')"
+          alt="screenshot" class="image"/>
       <div class="links">
-        <a :href="work.deploy" class="deploy">
+        <a :href="work.deploy" class="deploy" title="deploy">
           <svg class="icon" width="30" height="30">
             <use xlink:href="@/assets/images/icons/sprite-work.svg#deploy" >
               deploy link
             </use>
           </svg>
         </a>
-        <a :href="work.code" class="code">
+        <a :href="work.code" class="code" title="code">
           <svg class="icon" width="30" height="30">
             <use xlink:href="@/assets/images/icons/sprite-work.svg#code" >
               code link
@@ -20,8 +21,8 @@
       </div>
     </div>
     <div class="content">
-      <div class="title">Title: {{work.title}}</div>
-      <div class="task">Task: {{work.task}}</div>
+      <h3 class="title">{{work.title}}</h3>
+      <div class="task">{{work.task}}</div>
       <div class="stack">Stack: {{work.stack}}</div>
     </div>
   </div>
@@ -37,11 +38,19 @@ export default {
   },
 };
 </script>
-<style scoped>
+<style lang="scss" scoped>
   .work {
-    width: 49%;
     display: flex;
     position: relative;
+    gap: 16px;
+
+    &:hover .picture .image {
+      filter: brightness(40%);
+    }
+  }
+
+  .work:hover .picture .links {
+  opacity: 1;
   }
 
   .work::before {
@@ -68,15 +77,37 @@ export default {
   }
   .picture {
     position: relative;
-    width: 30%;
+    width: 240px;
+    flex-shrink: 0;
   }
 
   .links {
+    transition: 0.3s ease;
     position: absolute;
-    bottom: 0;
+    top: 0;
+    opacity: 0;
+    display: flex;
+    gap: 8px;
+    padding: 8px;
+  }
+
+  .icon {
+    fill: var(--secondary-color);
+    stroke: var(--secondary-color);
+  }
+  .icon:hover {
+    fill: var(--accent-color-light);
+    stroke: var(--accent-color-light);
   }
 
   .image {
+    transition: 0.3s ease;
     width: 100%;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
   }
 </style>

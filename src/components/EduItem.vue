@@ -51,8 +51,9 @@ export default {
   .year {
     position: absolute;
     color: var(--secondary-color-dark);
-    top: 2px;
-    left: -112px;
+    top: -3px;
+    left: -116px;
+    font-size: 16px;
   }
 
 </style>
