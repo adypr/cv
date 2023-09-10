@@ -6,7 +6,7 @@
   --secondary-color: #fdf5ea;
   --secondary-color-dark: #808386;
   --accent-color: #00c0aa;
-  --accent-color-light: #ffee00;
+  --accent-color-light: #fdf5ea;
   --contrast-color: #f43054;
 }
 
@@ -19,7 +19,6 @@
 
 html {
   scroll-behavior: smooth;
-
   background-color: var(--primary-color);
 }
 
@@ -67,12 +66,13 @@ li {
 }
 
 a {
-  color: inherit;
+  color: var(--accent-color);
   text-decoration: none;
+  transition: 0.3s ease;
 }
 
 a:hover {
-  color: var(--accent-color-light);
+  color: var(--contrast-color);
 }
 
 button {
@@ -87,7 +87,6 @@ button {
 }
 
 div {
-  font-size: 16px;
   line-height: 150%;
 }
 

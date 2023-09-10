@@ -7,8 +7,10 @@
         <p class="description">Fronend developer</p>
       </div>
     </div>
-    <SkillList :skills="skills" />
-    <ContactList :contacts="contacts" />
+    <div class="content">
+      <SkillList :skills="skills" />
+      <ContactList :contacts="contacts" />
+    </div>
   </aside>
 </template>
 <script>
@@ -37,33 +39,74 @@ export default {
     background: linear-gradient(270deg, var(--first-gradient-color)
                  0.02%, var(--second-gradient-color) 100%);
     @media (max-width: $xxl) {
-      padding: 3vw 2.8vw 3vw 3.5vw;
+      padding: 3vw 2.2vw;
     }
-  }
-  .picture {
-    position: relative;
-    margin-bottom: 64px;
+
+    @media (max-width: $m) {
+      width: 100%;
+      display: flex;
+      gap: 16px;
+      padding: 4vw 3.7vw 2.5vw;
+    }
+
+    @media (max-width: $s) {
+      display: block;
+    }
   }
 
   img {
-    width: 100%;
+    max-height: 50%;
+    border-radius: 50%;
+
+    @media (max-width: $m) {
+      display: block;
+      max-width: 205px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .picture {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 40vh;
+    margin-bottom: 64px;
+    flex-shrink: 0;
+    background: url("@/assets/images/bg-image.jpg") no-repeat;
+    background-size: cover;
+
+    @media (max-width: $m) {
+      margin-bottom: 32px;
+    }
   }
 
   .heading {
-    position: absolute;
-    bottom: 0;
     text-align: center;
-    width: calc(100% - 48px);
-    margin: 24px;
-    padding: 14px 15px;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    padding: 24px;
     background: linear-gradient(148.05deg, rgba(71, 79, 87, 0.576)
      0%, rgba(247, 235, 218, 0.128) 100%);
     backdrop-filter: blur(20px);
-    mix-blend-mode:difference;
+    mix-blend-mode: difference;
     filter: drop-shadow(0px 4px 16px rgba(0, 0, 0, 0.24));
     border-radius: 32px;
     background-image: url("@/assets/images/noise.png");
 
+    @media (max-width: $l) {
+      padding: 1.3vw;
+    }
+
+    @media (max-width: $m) {
+      border-radius: 20px;
+    }
+
+    @media (max-width: $s) {
+      padding: 4vw;
+    }
   }
 
   .title {
@@ -73,6 +116,15 @@ export default {
     letter-spacing: 0.12em;
     margin-bottom: 10px;
     text-shadow: 0px 3px 8px rgba(0, 0, 0, 0.08);
+
+    @media (max-width: $xl) {
+      font-size: 28px;
+    }
+
+    @media (max-width: $l) {
+      font-size: 24px;
+      line-height: 23px;
+    }
   }
 
   .description {
@@ -82,28 +134,14 @@ export default {
     line-height: 20px;
     letter-spacing: 0.01em;
     text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.08);
-  }
-  .description::before {
-    display: block;
-    bottom: 50%;
-    content: '';
-    width: 100%;
-    height: 1px;
-    background: linear-gradient(90deg, rgba(247,235,218,1) 0%, rgba(247,235,218,0) 30%,
-                                       rgba(247,235,218,0) 70%, rgba(247,235,218,1) 100%);
-    border-radius: 50%;
-    margin-bottom: 12px;
-  }
 
-  .description::after {
-    position: absolute;
-    display: block;
-    width: 100%;
-    text-align: center;
-    top: -8px;
-    content: '</>';
-    font-size: 12px;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: 800;
+    @media (max-width: $xl) {
+      font-size: 18px;
+    }
+
+    @media (max-width: $l) {
+      font-size: 16px;
+      line-height: 15px;
+    }
   }
 </style>

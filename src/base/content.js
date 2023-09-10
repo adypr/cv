@@ -1,4 +1,4 @@
-export const aboutContent = `Hello! I develop applications in native JavaScript, as well as using libraries and frameworks. I know HTML, SCSS, BEM methodology.
+export const aboutContent = `Hello! I develop applications in native JavaScript, as well as using libraries and frameworks. I've learned HTML, SCSS, BEM methodology.
  I use Webpack to build JS projects. Familiar with Rest API, NodeJS, Docker.\nI constantly improve my skills and keep track of the latest development trends in
   order to be able to use the best solutions for realizable projects.`;
 
@@ -37,19 +37,23 @@ export const works = [
   },
   {
     id: 5,
-    title: 'Virtual Keyboard',
-    task: 'The project in JavaScript. All HTML generation is done through JS, without the use any JS libraries and frameworks',
-    stack: 'StyleLint, ESLint, Webpack',
-    deploy: 'https://adypr.github.io/virtual-keyboard/',
-    code: 'https://github.com/adypr/virtual-keyboard',
-  },
-  {
-    id: 6,
     title: 'Shelter',
     task: 'Two-page site. Responsive layout, carousel slider, burger menu, pagination',
     stack: 'PerfectPixel, PUG, SCSS, BEM, Stylelint, ESLint with Airbnb, Webpack',
     deploy: 'https://rolling-scopes-school.github.io/adypr-JSFE2022Q1/shelter/pages/main/',
     code: 'https://github.com/adypr/shelter-clone',
+  },
+
+];
+
+export const otherWorks = [
+  {
+    id: 6,
+    title: 'Virtual Keyboard',
+    task: 'The project in JavaScript. All HTML generation is done through JS, without the use any JS libraries and frameworks',
+    stack: 'StyleLint, ESLint, Webpack',
+    deploy: 'https://adypr.github.io/virtual-keyboard/',
+    code: 'https://github.com/adypr/virtual-keyboard',
   },
   {
     id: 7,
@@ -72,9 +76,9 @@ export const works = [
 export const skills = ['SCSS', 'BEM', 'JS', 'TypeScript', 'Webpack', 'React', 'Jest', 'Git'];
 
 export const contacts = [
-  { icon: 'mail', text: 'aycodeacc@gmail.com' },
-  { icon: 'discord', text: 'Aida Y#1689' },
-  { icon: 'linkedin', text: 'linkedin.com/in/aycodeacc' },
+  { icon: 'mail', link: 'mailto:aycodeacc@gmail.com="Question about CV"', text: 'aycodeacc@gmail.com' },
+  { icon: 'discord', link: 'https://discordapp.com/users/622121889544011791/', text: 'Aida Y#1689' },
+  { icon: 'linkedin', link: 'linkedin.com/in/aycodeacc', text: 'linkedin.com/in/aycodeacc' },
 ];
 
 export const educations = [

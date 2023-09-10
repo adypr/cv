@@ -3,10 +3,13 @@
     <h2>Contact me</h2>
     <ul>
       <li v-for="(contact, index) in contacts" :key="index">
+        <a :href="contact.link">
           <span :style="'background-image: url(' + require('@/assets/images/icons/'
            + contact.icon + '.svg') + ')'"></span>
-            {{contact.text}}
+          {{contact.text}}
+        </a>
       </li>
+
     </ul>
   </section>
 </template>
@@ -21,21 +24,25 @@ export default {
 };
 </script>
 <style scoped>
-  ul {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-  }
   li {
-    display: flex;
-    align-items: center;
-    gap: 5px;
+    margin-bottom: 15px;
   }
+
+  a {
+    display: flex;
+    column-gap: 6px;
+    align-items: center;
+
+    &:hover > span {
+      background-color: var(--contrast-color);
+      transition: 0.3s ease;
+    }
+  }
+
   span {
     width: 32px;
     height: 32px;
-    flex-shrink: 0;
-    background-color: var(--accent-color-light);
+    background-color: var(--accent-color);
     background-repeat: no-repeat;
     border-radius: 50%;
     background-size: 70%;

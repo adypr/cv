@@ -20,18 +20,29 @@ export default {
   },
 };
 </script>
-<style scoped>
+<style lang="scss" scoped>
 section {
   position: relative;
   padding-left: 56px;
   border-left: 2px solid;
   border-image: url('@/assets/images/line-edu.png') 1 stretch;
+
+  @media (max-width: $l) {
+    padding-left: 0;
+    padding-top: 12px;
+    border: none;
+  }
 }
 
 h2 {
   position: relative;
   margin-bottom: 34px;
   top: -13px;
+
+  @media (max-width: $l) {
+    position: static;
+    padding-left: 52px;
+  }
 }
 
 h2:before {
@@ -45,6 +56,10 @@ h2:before {
   border: 2px solid var(--secondary-color);
   border-radius: 50%;
   background-color: var(--primary-color);
+
+  @media (max-width: $l) {
+    display: none;
+  }
 }
 
 h2::after {
@@ -57,6 +72,11 @@ h2::after {
   height: 40px;
   background: var(--contrast-color) url('@/assets/images/icons/edu.svg') no-repeat center;
   border-radius: 50%;
+
+  @media (max-width: $l) {
+    left: 0;
+    top: 6px;
+  }
 }
 .slide-enter-active,
 .slide-leave-active {

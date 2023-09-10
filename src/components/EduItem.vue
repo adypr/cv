@@ -15,7 +15,7 @@ export default {
   },
 };
 </script>
-<style scoped>
+<style lang="scss" scoped>
   .edu {
     position: relative;
     margin-bottom: 40px;
@@ -29,6 +29,10 @@ export default {
     left: -69px;
     background-color: var(--secondary-color);
     border-radius: 50%;
+
+    @media (max-width: $l) {
+      display: none;
+    }
   }
 
   .edu::after {
@@ -41,6 +45,10 @@ export default {
     top: 6px;
     background-color: var(--contrast-color);
     border-radius: 50%;
+
+    @media (max-width: $l) {
+      display: none;
+    }
   }
 
   .title {
@@ -54,6 +62,10 @@ export default {
     top: -3px;
     left: -116px;
     font-size: 16px;
+
+    @media (max-width: $xl) {
+      position: static;
+  }
   }
 
 </style>

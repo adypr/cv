@@ -5,6 +5,15 @@
     <WorkItem v-for="work in works" :key="work.id" :work="work"
      :style="{transitionDelay: work.id*0.1 + 's'}"/>
   </transition-group>
+  <details>
+    <summary>More projects</summary>
+      <p>
+        <transition-group name="oslide" tag="div" appear class="list" >
+          <WorkItem v-for="work in otherWorks" :key="work.id" :work="work"
+          :style="{transitionDelay: work.id*0.1 + 's'}"/>
+        </transition-group>
+    </p>
+  </details>
   </section>
 </template>
 <script>
@@ -17,17 +26,34 @@ export default {
       type: Array,
       required: true,
     },
+    otherWorks: {
+      type: Array,
+      required: true,
+    },
   },
 };
 </script>
-<style scoped>
+<style lang="scss" scoped>
 section {
   position: relative;
   margin-top: 56px;
+  margin-bottom: 56px;
   padding: 16px 0 16px 56px;
-  padding-bottom: 55px;
   border-left: 2px solid;
   border-image: url('@/assets/images/line-works.png') 1 stretch;
+
+  @media (max-width: $l) {
+    padding: 3vw 0;
+    margin-top: 3vw;
+    margin-bottom: 0;
+    border: none;
+  }
+}
+
+h2 {
+  @media (max-width: $l) {
+    padding-left: 52px;
+  }
 }
 
 h2::after {
@@ -40,6 +66,11 @@ h2::after {
   height: 40px;
   background: var(--accent-color) url('@/assets/images/icons/briefcase.svg') no-repeat center;
   border-radius: 50%;
+
+  @media (max-width: $l) {
+    top: 20px;
+    left: 0;
+  }
 }
 
 h2::before {
@@ -53,7 +84,27 @@ h2::before {
   border: 2px solid var(--secondary-color);
   border-radius: 50%;
   background-color: var(--primary-color);
+
+  @media (max-width: $l) {
+    display: none;
+  }
 }
+
+summary {
+  color: var(--accent-color);
+  background: linear-gradient(270deg, var(--first-gradient-color)
+                 0.02%, var(--second-gradient-color) 100%);
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  list-style-type: none;
+  transition: 0.3s ease;
+
+  &:hover {
+    color: var(--contrast-color);
+  }
+}
+
 .slide-enter-active,
 .slide-leave-active {
   transition: all 0.5s ease;

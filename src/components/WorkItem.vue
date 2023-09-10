@@ -62,6 +62,10 @@ export default {
     left: -69px;
     background-color: var(--secondary-color);
     border-radius: 50%;
+
+    @media (max-width: $l) {
+      display: none;
+    }
   }
 
   .work::after {
@@ -74,11 +78,19 @@ export default {
     top: 6px;
     background-color: var(--accent-color);
     border-radius: 50%;
+
+    @media (max-width: $l) {
+      display: none;
+    }
   }
   .picture {
     position: relative;
     width: 240px;
     flex-shrink: 0;
+
+    @media (max-width: $xl) {
+      width: 180px;
+    }
   }
 
   .links {
@@ -92,12 +104,13 @@ export default {
   }
 
   .icon {
-    fill: var(--secondary-color);
-    stroke: var(--secondary-color);
+    fill: var(--accent-color);
+    stroke: var(--accent-color);
+    transition: 0.3s ease;
   }
   .icon:hover {
-    fill: var(--accent-color-light);
-    stroke: var(--accent-color-light);
+    fill: var(--contrast-color);
+    stroke: var(--contrast-color);
   }
 
   .image {

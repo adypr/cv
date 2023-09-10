@@ -16,10 +16,15 @@ export default {
   },
 };
 </script>
-<style scoped>
+<style lang="scss" scoped>
 
 section {
-  margin-bottom: 56px;;
+  margin-bottom: 56px;
+
+  @media (max-width: $m) {
+    margin-bottom: 40px;
+  }
+
 }
 .skills {
   display: flex;
@@ -27,6 +32,7 @@ section {
   gap: 16px 8px;
 
 }
+
 span {
   background-color: var(--secondary-color);
   color: var(--primary-color);
@@ -36,5 +42,14 @@ span {
   font-size: 20px;
   line-height: 20px;
   letter-spacing: 0.01em;
+
+  @media (max-width: $xl) {
+      font-size: 18px;
+    }
+
+  @media (max-width: $l) {
+    font-size: 16px;
+    padding: 0.5vw 1vw;
+  }
 }
 </style>
