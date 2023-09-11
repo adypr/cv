@@ -45,7 +45,7 @@ section {
   @media (max-width: $l) {
     padding: 3vw 0;
     margin-top: 3vw;
-    margin-bottom: 0;
+    margin-bottom: 35px;
     border: none;
   }
 }
@@ -53,6 +53,10 @@ section {
 h2 {
   @media (max-width: $l) {
     padding-left: 52px;
+  }
+
+  @media (max-width: $m) {
+    padding-left: 0;
   }
 }
 
@@ -70,6 +74,10 @@ h2::after {
   @media (max-width: $l) {
     top: 20px;
     left: 0;
+  }
+
+  @media (max-width: $m) {
+    display: none;
   }
 }
 

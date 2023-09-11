@@ -43,6 +43,10 @@ h2 {
     position: static;
     padding-left: 52px;
   }
+
+  @media (max-width: $m) {
+    padding-left: 0;
+  }
 }
 
 h2:before {
@@ -76,6 +80,10 @@ h2::after {
   @media (max-width: $l) {
     left: 0;
     top: 6px;
+  }
+
+  @media (max-width: $m) {
+    display: none;
   }
 }
 .slide-enter-active,

@@ -55,12 +55,11 @@ export default {
   }
 
   img {
-    max-height: 50%;
+    max-height: 150px;
     border-radius: 50%;
 
     @media (max-width: $m) {
       display: block;
-      max-width: 205px;
       margin-left: auto;
       margin-right: auto;
     }
@@ -69,11 +68,11 @@ export default {
   .picture {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 20px;
-    height: 40vh;
+    gap: 10px;
     margin-bottom: 64px;
+    padding: 15px;
     flex-shrink: 0;
     background: url("@/assets/images/bg-image.jpg") no-repeat;
     background-size: cover;
@@ -85,15 +84,13 @@ export default {
 
   .heading {
     text-align: center;
-    margin-left: 1vw;
-    margin-right: 1vw;
-    padding: 24px;
+    padding: 2px 14px 10px;
     background: linear-gradient(148.05deg, rgba(71, 79, 87, 0.576)
      0%, rgba(247, 235, 218, 0.128) 100%);
     backdrop-filter: blur(20px);
     mix-blend-mode: difference;
     filter: drop-shadow(0px 4px 16px rgba(0, 0, 0, 0.24));
-    border-radius: 32px;
+    border-radius: 25px;
     background-image: url("@/assets/images/noise.png");
 
     @media (max-width: $l) {
@@ -114,7 +111,6 @@ export default {
     font-size: 35px;
     line-height: 45px;
     letter-spacing: 0.12em;
-    margin-bottom: 10px;
     text-shadow: 0px 3px 8px rgba(0, 0, 0, 0.08);
 
     @media (max-width: $xl) {
@@ -124,6 +120,7 @@ export default {
     @media (max-width: $l) {
       font-size: 24px;
       line-height: 23px;
+      margin-bottom: 10px;
     }
   }
 

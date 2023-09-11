@@ -1,5 +1,5 @@
-export const aboutContent = `Hello! I develop applications in native JavaScript, as well as using libraries and frameworks. I've learned HTML, SCSS, BEM methodology.
- I use Webpack to build JS projects. Familiar with Rest API, NodeJS, Docker.\nI constantly improve my skills and keep track of the latest development trends in
+export const aboutContent = `Hello! I develop applications in native JavaScript, as well as using libraries and frameworks.
+Familiar with React for building interactive user interfaces and Webpack for bundling and optimizing front-end assets.  Basic knowledge of Rest API, TypeScript, NodeJS, Jest.\nI constantly improve my skills and keep track of the latest development trends in
   order to be able to use the best solutions for realizable projects.`;
 
 export const works = [
