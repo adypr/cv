@@ -78,7 +78,7 @@ export const skills = ['SCSS', 'BEM', 'JS', 'TypeScript', 'Webpack', 'React', 'J
 export const contacts = [
   { icon: 'mail', link: 'mailto:aycodeacc@gmail.com="Question about CV"', text: 'aycodeacc@gmail.com' },
   { icon: 'discord', link: 'https://discordapp.com/users/622121889544011791/', text: 'Aida Y#1689' },
-  { icon: 'linkedin', link: 'linkedin.com/in/aycodeacc', text: 'linkedin.com/in/aycodeacc' },
+  { icon: 'linkedin', link: 'https://linkedin.com/in/aycodeacc', text: 'linkedin.com/in/aycodeacc' },
 ];
 
 export const educations = [
