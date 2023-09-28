@@ -1,6 +1,6 @@
 <template lang="">
   <section>
-    <h2>Contact me</h2>
+    <h2>Links</h2>
     <ul>
       <li v-for="(contact, index) in contacts" :key="index">
         <a :href="contact.link">
@@ -39,6 +39,10 @@ export default {
     }
   }
 
+  li:last-child span {
+    background-position-y: 5px;
+  }
+
   span {
     width: 32px;
     height: 32px;
@@ -46,6 +50,6 @@ export default {
     background-repeat: no-repeat;
     border-radius: 50%;
     background-size: 70%;
-    background-position: center;
+    background-position: 5px center;
   }
 </style>

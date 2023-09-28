@@ -33,6 +33,15 @@ section {
 
 }
 
+.codewars__link {
+  display: flex;
+  justify-content: space-between;
+  background-color: #303133;
+
+  border-color: #E8E8E8;
+  border-top:34px solid #FFF; border-left:17px solid #FFCC00; border-bottom:34px solid #FFF;
+}
+
 span {
   background-color: var(--secondary-color);
   color: var(--primary-color);
