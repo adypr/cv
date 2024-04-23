@@ -6,7 +6,7 @@ export const works = [
   {
     id: 1,
     title: 'The artist\'s personal website',
-    task: 'The project implements the possibility of selling goods, sending a feedback form. Layout: Figma, Vite, EJS, SCSS',
+    task: 'The project implements the possibility of selling goods, sending a feedback form. Layout: Vite, EJS, SCSS',
     stack: 'WordPress, Underscores, WooCommerce',
     deploy: 'https://artyasin.com/',
     code: 'https://github.com/adypr/bt',
