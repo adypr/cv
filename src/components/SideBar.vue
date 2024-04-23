@@ -4,7 +4,7 @@
       <img src="@/assets/images/image.jpg" alt="" class="image">
       <div class="heading">
         <h1 class="title">Aida Yasin</h1>
-        <p class="description">Fronend developer</p>
+        <p class="description">Web developer</p>
       </div>
     </div>
     <div class="content">

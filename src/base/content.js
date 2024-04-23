@@ -1,15 +1,15 @@
 export const aboutContent = `Hello! I develop applications in native JavaScript, as well as using libraries and frameworks.
-Familiar with Webpack and Vite for bundling and optimizing front-end assets.  Basic knowledge of React, Vue.js, Rest API, TypeScript, NodeJS, Jest.\nI constantly improve my skills and keep track of the latest development trends in
+Familiar with Webpack and Vite for bundling and optimizing front-end assets.  Basic knowledge of WordPress, React, Vue.js, Rest API, TypeScript, NodeJS, Jest.\nI constantly improve my skills and keep track of the latest development trends in
   order to be able to use the best solutions for realizable projects.`;
 
 export const works = [
   {
     id: 1,
-    title: 'Organic food',
-    task: 'React project using uncontrolled forms, no libraries',
-    stack: 'React, CRA, TypeScript, Jest',
-    deploy: 'https://react2022q3-organic-foods.netlify.app/',
-    code: 'https://github.com/adypr/organic-foods',
+    title: 'The artist\'s personal website',
+    task: 'The project implements the possibility of selling goods, sending a feedback form. Layout: Figma, Vite, EJS, SCSS',
+    stack: 'WordPress, Underscores, WooCommerce',
+    deploy: 'https://artyasin.com/',
+    code: 'https://github.com/adypr/bt',
   },
   {
     id: 2,
@@ -49,6 +49,14 @@ export const works = [
 export const otherWorks = [
   {
     id: 6,
+    title: 'Organic food',
+    task: 'React project using uncontrolled forms, no libraries',
+    stack: 'React, CRA, TypeScript, Jest',
+    deploy: 'https://react2022q3-organic-foods.netlify.app/',
+    code: 'https://github.com/adypr/organic-foods',
+  },
+  {
+    id: 7,
     title: 'Virtual Keyboard',
     task: 'The project in JavaScript. All HTML generation is done through JS, without the use any JS libraries and frameworks',
     stack: 'StyleLint, ESLint, Webpack',
@@ -56,7 +64,7 @@ export const otherWorks = [
     code: 'https://github.com/adypr/virtual-keyboard',
   },
   {
-    id: 7,
+    id: 8,
     title: 'Async Race',
     task: 'Mini-game in JavaScript. All HTML generation is done through JS, without the use any JS libraries and frameworks. ',
     stack: 'TypeScript, StyleLint, ESLint, Webpack, Json-server',
@@ -64,9 +72,9 @@ export const otherWorks = [
     code: 'https://github.com/adypr/async-race-clone',
   },
   {
-    id: 8,
+    id: 9,
     title: 'CSS mem-slider',
-    task: 'Slider implemented only in CSS. Without using any JS libraries.',
+    task: 'Slider has made only in CSS. Without using any JS libraries.',
     stack: 'HTML, CSS',
     deploy: 'https://adypr.github.io/css-mem-slider/cssMemSlider/',
     code: 'https://github.com/adypr/css-mem-slider',
