@@ -21,11 +21,11 @@ export const works = [
   },
   {
     id: 3,
-    title: 'Online store',
-    task: 'The project in JavaScript. Implemented adding products to the cart, search by product cards, cross-filtering and sorting',
-    stack: 'SCSS, ESLint, TypeScript, Webpack, Jest',
-    deploy: 'https://rolling-scopes-school.github.io/adypr-JSFE2022Q1/store/',
-    code: 'https://github.com/adypr/online-store-clone',
+    title: 'Sheets for virtual piano',
+    task: 'The project is a blog for publishing sheet music for a virtual piano. It features a dynamically changing sidebar menu designed as piano keys, adapting to the number of posts. Security and optimization are enhanced using plugins such as All In One WP Security and Wordfence Security.',
+    stack: 'WordPress, WP REST API, PHP, JavaScript',
+    deploy: 'https://qvadit.com/',
+    code: 'https://github.com/adypr/qvadit-wp',
   },
   {
     id: 4,
@@ -49,6 +49,14 @@ export const works = [
 export const otherWorks = [
   {
     id: 6,
+    title: 'Online store',
+    task: 'The project in JavaScript. Implemented adding products to the cart, search by product cards, cross-filtering and sorting',
+    stack: 'SCSS, ESLint, TypeScript, Webpack, Jest',
+    deploy: 'https://rolling-scopes-school.github.io/adypr-JSFE2022Q1/store/',
+    code: 'https://github.com/adypr/online-store-clone',
+  },
+  {
+    id: 7,
     title: 'Organic food',
     task: 'React project using uncontrolled forms, no libraries',
     stack: 'React, CRA, TypeScript, Jest',
@@ -56,7 +64,7 @@ export const otherWorks = [
     code: 'https://github.com/adypr/organic-foods',
   },
   {
-    id: 7,
+    id: 8,
     title: 'Virtual Keyboard',
     task: 'The project in JavaScript. All HTML generation is done through JS, without the use any JS libraries and frameworks',
     stack: 'StyleLint, ESLint, Webpack',
@@ -64,20 +72,12 @@ export const otherWorks = [
     code: 'https://github.com/adypr/virtual-keyboard',
   },
   {
-    id: 8,
+    id: 9,
     title: 'Async Race',
     task: 'Mini-game in JavaScript. All HTML generation is done through JS, without the use any JS libraries and frameworks. ',
     stack: 'TypeScript, StyleLint, ESLint, Webpack, Json-server',
     deploy: 'https://638bab6a97124e6b9e6374ed--silly-marshmallow-7b0b33.netlify.app/',
     code: 'https://github.com/adypr/async-race-clone',
-  },
-  {
-    id: 9,
-    title: 'CSS mem-slider',
-    task: 'Slider has made only in CSS. Without using any JS libraries.',
-    stack: 'HTML, CSS',
-    deploy: 'https://adypr.github.io/css-mem-slider/cssMemSlider/',
-    code: 'https://github.com/adypr/css-mem-slider',
   },
 ];
 
